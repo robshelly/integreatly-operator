@@ -420,7 +420,6 @@ spec:
     name: Red Hat, Inc
   labels:
     app: enmasse
-  replaces: amqonline.1.3.2
   selector:
     matchLabels:
       app: enmasse
