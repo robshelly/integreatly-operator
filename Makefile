@@ -162,7 +162,7 @@ cluster/prepare/olm: cluster/prepare/project cluster/prepare/osrc
 
 .PHONY: cluster/prepare/smtp
 cluster/prepare/smtp:
-	@-oc create secret generic rhmi-smtp -n $(NAMESPACE) \
+	@-oc create secret generic $(INSTALLATION_PREFIX)-smtp -n $(NAMESPACE) \
 		--from-literal=host=smtp.example.com \
 		--from-literal=username=dummy \
 		--from-literal=password=dummy \
